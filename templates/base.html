@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ramin Homes</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <nav>
+    <a href="/">Home</a> |
+    <a href="/about">About</a> |
+    <a href="/contact">Contact</a>
+  </nav>
+  <hr>
+  {% block content %}{% endblock %}
+  <footer>
+    <hr>
+    <p>Ramin Vafadary | DRE #02123456 | Real Estate eBroker Inc. DRE #01522411</p>
+  </footer>
+</body>
+</html>
